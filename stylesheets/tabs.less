@@ -3,9 +3,9 @@
 @modified-icon-width: 8px;
 @tab-skew: 30deg;
 @tab-top-padding: 5px;
-@tab-bottom-border-height: 8px;
+@tab-bottom-border-height: 0px;
 @tab-border: 1px solid @tab-border-color;
-@tab-bar-bottom-border-color: #111;
+@tab-bar-bottom-border-color: @base03;
 
 .tab-bar {
   height: @tab-height + @tab-top-padding + @tab-bottom-border-height;
@@ -42,7 +42,7 @@
     border: none;
 
     &, &:before {
-      background-image: -webkit-linear-gradient(top, lighten(#333, 7%), #333);
+      background-color: @base02;
     }
 
     &:before {
@@ -106,7 +106,7 @@
     }
 
     &, &:before {
-      background-image: -webkit-linear-gradient(top, lighten(@tab-background-color-active, 7%), @tab-background-color-active);
+      background-color: @base03;
       height: @tab-height + 1px;
     }
 
